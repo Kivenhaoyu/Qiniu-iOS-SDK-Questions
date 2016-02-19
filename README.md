@@ -29,12 +29,16 @@
 <a name='version is wrong'></a>
 ###用CocoaPods安装七牛SDK版本不是当前版本
 问：用CocoaPods下载的七牛SDK不是当前最新版本
+
 答：1，检查当前CocoaPods版本是否为最新版
       在终端中输入
+      
       ```ruby
       $ pod --version
       ```
+      
       如果是最新版本，请直接跳至第二步，CocoaPods未更新至最新版本，直接用命令行更新（安装）步骤
+      
       ```ruby
       $ sudo gem update --system // 先更新gem，国内需要切换源
       $ gem sources --remove https://rubygems.org/
@@ -45,12 +49,16 @@
       $ sudo gem install cocoapods // 安装cocoapods
       $ pod setup
       ```
+      
       再次查看版本
+      
       ```ruby
       $ pod --version
       ```
+      
       查看是否是最新版本
       之后重新在项目下输入
+      
       ```ruby
       $ pod install
       ```
@@ -58,6 +66,7 @@
 
     2，如果版本为最新版本，请清理当前CocoaPods的缓存
        先删除全局的缓存：
+       
        ```ruby
        $ sudo rm -fr ~/Library/Caches/CocoaPods/
        $ sudo rm -fr ~/.cocoapods/repos/master/
