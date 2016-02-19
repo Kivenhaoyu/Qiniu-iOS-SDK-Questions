@@ -46,24 +46,24 @@ $ sudo gem install cocoapods // 安装cocoapods
 $ pod setup
 ```
 再次查看版本
-```ruby
+```
 $ pod --version
 ```
 查看是否是最新版本,之后重新在项目下输入
-```ruby
+```
 $ pod install
 ```
 2，如果版本为最新版本，请清理当前CocoaPods的缓存,先删除全局的缓存：
-```ruby
+```
 $ sudo rm -fr ~/Library/Caches/CocoaPods/
 $ sudo rm -fr ~/.cocoapods/repos/master/
 ```
 还不行的话就把当前 Pods 目录清空：
-```ruby
+```
 $ sudo rm -fr Pods/
 ```
 之后再运行：
-```ruby
+```
 $ pod install
 ```
        
@@ -74,3 +74,4 @@ $ pod install
 <a name='questions about configuration'></a>
 ###关于https问题
 iOS 9+ 强制使用https，需要在project build info 添加NSAppTransportSecurity类型Dictionary。在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES。如图
+ ![image](https://github.com/Kivenhaoyu/Qiniu-iOS-SDK-Questions/blob/master/appTransform.jpg)
