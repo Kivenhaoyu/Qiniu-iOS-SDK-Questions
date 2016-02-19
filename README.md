@@ -31,11 +31,11 @@
 问：用CocoaPods下载的七牛SDK不是当前最新版本
 
 答：1，检查当前CocoaPods版本是否为最新版，在终端中输入
-```ruby
+```
 $ pod --version
 ```
 如果是最新版本，请直接跳至第二步，CocoaPods未更新至最新版本，直接用命令行更新（安装）步骤
-```ruby
+```
 $ sudo gem update --system // 先更新gem，国内需要切换源
 $ gem sources --remove https://rubygems.org/
 $ gem sources -a http://ruby.taobao.org/
